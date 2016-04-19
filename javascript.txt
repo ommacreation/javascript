@@ -1,0 +1,1 @@
+Java script est un langage de programmation de scripts principalement employé pour rendre les pages web interactives, mais aussi pour les serveurs.
