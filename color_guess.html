@@ -9,6 +9,8 @@
 	<script type='text/javascript'>
 	
 	var color =["blue", "cyan", "gold", "green", "magenta", "maroon", "orange", "pink", "purple", "red", "silver", "white", "yellow"];
+	var guess_input;
+	var check_guess;
 	var target;
 
 	function do_game(){
@@ -18,8 +20,18 @@
 		while (finished ==false){
 			guess_input = prompt ('I am thinking of theses colors : \n\n + color.join(',')+'\n\n What color am I thinking of ?' );
 		finished = check_guess();
-
 		}
+	
+	function checkguess(){
+		if (guess_input != target){
+		return false;
+		}
+		
+		if (guess_input == target){
+		finished = true;
+		alert ("congratulation ! you have guessed the color !");
+		}
+	}
 
 	</script>
 	</body>
